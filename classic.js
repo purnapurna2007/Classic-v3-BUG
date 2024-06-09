@@ -849,7 +849,7 @@ image: cewegw,
 zetsubo.sendMessage(from, hiks, {quoted: zets })}
 break
 //=================================================//
-case 'bugmenu': {
+case 'bug': {
 await loading()
                             ewe = `┏━━━━▓ ༺𝗥𝗖𝗗 𝗕𝗨𝗚 𝗕𝗢𝗧༻ ▓━━━━━━━━━━
 ┃  ➥𝐒𝐜 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 ❴ 𝐵𝑌 𝑆𝐴𝑀 ❵
@@ -8429,7 +8429,37 @@ case 'broadcast':
 //=================================================
 case "bug":
 
-const audiovn = "./Classic.mp3";
+const audiovn = "./rcdmd.mp3";
+    const dooc = {
+        audio: {
+          url: audiovn
+        },
+        mimetype: 'audio/mp4',
+        ptt: true,
+        waveform:  [100, 0, 100, 0, 100, 0, 100],
+        fileName: "",
+
+        contextInfo: {
+          mentionedJid: [m.sender],
+          externalAdReply: {
+          title: "𝐇𝐢 𝐇𝐮𝐦𝐚𝐧,𝐂𝐥𝐚𝐬𝐬𝐢𝐜 𝐁𝐨𝐭 𝐈𝐬 𝐀𝐥𝐢𝐯𝐞 𝐚𝐧𝐝 𝐊𝐢𝐜𝐤𝐢𝐧𝐠",
+          body: "https://chat.whatsapp.com/EPSGKau0IVi7J5lyOJO7Jk",
+          thumbnailUrl: "https://telegra.ph/file/f6d66a60454e31e0a2c0d.jpg",
+          sourceUrl: "https://chat.whatsapp.com/EPSGKau0IVi7J5lyOJO7Jk",
+          mediaType: 1,
+          renderLargerThumbnail: true
+          }}
+      };
+
+
+await zetsubo.sendMessage(m.chat, dooc, {quoted: m});
+
+
+break;
+//=================================================
+case "rcd":
+
+const audiovn = "./dexter.mp3";
     const dooc = {
         audio: {
           url: audiovn
