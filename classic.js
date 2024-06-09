@@ -8520,7 +8520,7 @@ case 'sound160':
 case 'sound161':
 if (isBan) return reply('😹')
 await loading()
- zetsubogans = await getBuffer(`https://github.com/purnapurna2007/Tiktokmusic-API/tree/master/tiktokmusic${command}.mp3`)
+ zetsubogans = await getBuffer(`https://github.com/purnapurna2007/Tiktokmusic-API-master/tree/main/tiktokmusic${command}.mp3`)
 await zetsubo.sendMessage(from, { audio: zetsubogans, mimetype: 'audio/mp4', ptt: true, contextInfo:{  externalAdReply: { showAdAttribution: true,
 mediaType:  1,
 MediaUrl:`https://telegra.ph/file/7f87b500538623d91075d.jpg`,
@@ -8587,7 +8587,7 @@ case 'broadcast':
             }
             break
 //=================================================
-case "alive":
+case "menu":
 
 const audiovn = "./Classic.mp3";
     const dooc = {
