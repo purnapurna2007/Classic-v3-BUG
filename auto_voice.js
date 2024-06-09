@@ -31,8 +31,8 @@ async function startSock() {
             const sender = msg.key.remoteJid;
             const command = msg.message.conversation || msg.message.extendedTextMessage?.text;
 
-            if (command === 'send audio') {
-                const audioUrl = 'https://www.example.com/audio.mp3'; // Replace with your audio URL
+            if (command === 'dexter') {
+                const audioUrl = 'https://github.com/purnapurna2007/Audio-mp3/raw/main/Audio/fuck.mp3'; // Replace with your audio URL
                 await sendAudio(sock, sender, audioUrl, msg);
             }
         }
