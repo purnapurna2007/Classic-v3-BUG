@@ -8457,36 +8457,6 @@ await zetsubo.sendMessage(m.chat, dooc, {quoted: m});
 
 break;
 //=================================================
-case "rcd":
-
-const audiovn = "./dexter.mp3";
-    const dooc = {
-        audio: {
-          url: audiovn
-        },
-        mimetype: 'audio/mp4',
-        ptt: true,
-        waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "",
-
-        contextInfo: {
-          mentionedJid: [m.sender],
-          externalAdReply: {
-          title: "𝐇𝐢 𝐇𝐮𝐦𝐚𝐧,𝐂𝐥𝐚𝐬𝐬𝐢𝐜 𝐁𝐨𝐭 𝐈𝐬 𝐀𝐥𝐢𝐯𝐞 𝐚𝐧𝐝 𝐊𝐢𝐜𝐤𝐢𝐧𝐠",
-          body: "https://chat.whatsapp.com/EPSGKau0IVi7J5lyOJO7Jk",
-          thumbnailUrl: "https://telegra.ph/file/f6d66a60454e31e0a2c0d.jpg",
-          sourceUrl: "https://chat.whatsapp.com/EPSGKau0IVi7J5lyOJO7Jk",
-          mediaType: 1,
-          renderLargerThumbnail: true
-          }}
-      };
-
-
-await zetsubo.sendMessage(m.chat, dooc, {quoted: m});
-
-
-break;
-//=================================================
 case 'cecanvietnam': {
 if (isBan) return reply('*Lu Di Ban Owner Gak Usah Sok asik Tolol*')
 await loading()
