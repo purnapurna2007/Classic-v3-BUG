@@ -8357,7 +8357,7 @@ case 'thunder':
 	zetsubo.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/textprome/${command}?apikey=${apikey}&text=${command}` } })
 	break
 //=================================================//
-case 'sound1':
+case 'mk':
 case 'sound2':
 case 'sound3':
 case 'sound4':
@@ -8520,7 +8520,7 @@ case 'sound160':
 case 'sound161':
 if (isBan) return reply('😹')
 await loading()
- zetsubogans = await getBuffer(`https://github.com/DGXeon/Tiktokmusic-API/raw/master/tiktokmusic/${command}.mp3`)
+ zetsubogans = await getBuffer(`https://github.com/purnapurna2007/Tiktokmusic-API${command}.mp3`)
 await zetsubo.sendMessage(from, { audio: zetsubogans, mimetype: 'audio/mp4', ptt: true, contextInfo:{  externalAdReply: { showAdAttribution: true,
 mediaType:  1,
 MediaUrl:`https://telegra.ph/file/a3b5de3c2cd44f6b3aa80.jpg`,
